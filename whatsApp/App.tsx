@@ -1,29 +1,25 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
+import {Text, View} from 'react-native';
+import {Conversations} from './src/components/conversations/Conversations';
+import {Stories} from './src/components/Stories';
+import {Header} from "./src/components/Header";
 
 export const App = () => {
 
-  return (
-      <View>
-        <Text>Hello everybody</Text>
-      </View>
-  )
+    return (
+        <View>
+            <View>
+                <>
+                    <Header/>
+                    <Stories/>
+                    <Conversations/>
+                    {/*<Logout/>*/}
+                    {/*<Footer/>*/}
+                </>
+            </View>
+            <Text>Hello everybody</Text>
+        </View>
+    )
 };
 
 
